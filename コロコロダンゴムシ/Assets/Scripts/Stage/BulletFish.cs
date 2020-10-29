@@ -20,7 +20,8 @@ namespace RunGame.Stage
         float move_Y;
         float angle;
         public int ID;
-        
+        public int counter;
+        public GameObject BFF;
         public GameObject sakana;
 
         // Start is called before the first frame update

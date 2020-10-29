@@ -79,9 +79,15 @@
     <Compile Include="Assets\Scripts\Stage\EnemyFactory.cs" />
     <Compile Include="Assets\Scripts\Stage\GameOverUI.cs" />
     <Compile Include="Assets\Scripts\Stage\StageController.cs" />
+    <Compile Include="Assets\Scripts\Stage\HPfactory.cs" />
     <Compile Include="Assets\Scripts\Title\SceneController.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
-    <Compile Include="Assets\Scripts\Stage\HPfactory.cs" />
+    <Compile Include="Assets\Scripts\Stage\SubmarineVolcano2.cs" />
+    <Compile Include="Assets\Scripts\Stage\SubmarineVolcano1.cs" />
+    <Compile Include="Assets\Scripts\Stage\SubmarineVolcano3.cs" />
+    <Compile Include="Assets\Scripts\Stage\SubmarineVolcano4.cs" />
+    <Compile Include="Assets\Scripts\Stage\SubmarineVolcano5.cs" />
+    <Compile Include="Assets\Scripts\Stage\VolcanoFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

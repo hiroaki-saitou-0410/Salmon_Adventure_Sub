@@ -4,6 +4,7 @@ using System.Collections.Specialized;
 using System.Security.Cryptography;
 using System.Threading;
 using UnityEngine;
+using RunGame.Stage;
 
 public class Enemy : MonoBehaviour
 {
