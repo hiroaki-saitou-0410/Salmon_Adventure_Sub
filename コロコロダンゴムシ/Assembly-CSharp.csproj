@@ -55,16 +55,28 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Stage\CanGenerator.cs" />
+    <Compile Include="Assets\Scripts\Stage\RockGenerator.cs" />
     <Compile Include="Assets\Scripts\Stage\BulletFish.cs" />
     <Compile Include="Assets\Scripts\Result\SceneController.cs" />
+    <Compile Include="Assets\Scripts\Stage\BackgroundController.cs" />
     <Compile Include="Assets\Scripts\Stage\ChaseCamera.cs" />
     <Compile Include="Assets\Scripts\Stage\AnimatedTile.cs" />
+    <Compile Include="Assets\Scripts\Stage\test.cs" />
+    <Compile Include="Assets\Scripts\Stage\Food.cs" />
     <Compile Include="Assets\Scripts\SelectStage\SceneController.cs" />
     <Compile Include="Assets\Scripts\Stage\BFF.cs" />
+    <Compile Include="Assets\Scripts\Stage\Enemy.cs" />
     <Compile Include="Assets\Scripts\GameClear\SceneController.cs" />
+    <Compile Include="Assets\Scripts\Stage\SingletonMonoBehaviour.cs" />
     <Compile Include="Assets\Scripts\Stage\Player.cs" />
     <Compile Include="Assets\Scripts\Stage\SceneController.cs" />
+    <Compile Include="Assets\Scripts\Stage\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\Stage\UiManager.cs" />
+    <Compile Include="Assets\Scripts\Stage\Bgm.cs" />
+    <Compile Include="Assets\Scripts\Stage\SoundManager.cs" />
+    <Compile Include="Assets\Scripts\Stage\Can.cs" />
+    <Compile Include="Assets\Scripts\Stage\EnemyFactory.cs" />
     <Compile Include="Assets\Scripts\Stage\GameOverUI.cs" />
     <Compile Include="Assets\Scripts\Stage\StageController.cs" />
     <Compile Include="Assets\Scripts\Title\SceneController.cs" />

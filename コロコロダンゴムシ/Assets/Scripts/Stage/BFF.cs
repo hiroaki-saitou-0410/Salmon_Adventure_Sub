@@ -10,7 +10,6 @@ using System.Net;
 
 public class BFF : MonoBehaviour
 {
-    
     public GameObject[] Tama;
     public GameObject player;
     public GameObject BulletFish;

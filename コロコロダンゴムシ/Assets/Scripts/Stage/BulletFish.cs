@@ -12,7 +12,7 @@ namespace RunGame.Stage
     public class BulletFish : MonoBehaviour
     {
         public float Speed = 1.0f;
-        public float radius = 2.0f;
+        public float radius = 0.5f;
         int BulletF_MAX = 5;
         float sakana_Posx;
         float sakana_Posy;

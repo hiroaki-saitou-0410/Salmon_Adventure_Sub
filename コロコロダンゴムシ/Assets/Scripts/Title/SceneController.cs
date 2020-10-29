@@ -34,7 +34,7 @@ namespace RunGame.Title
         public void OnClickStartButton()
         {
             // 『ステージ選択画面』へシーン遷移
-            SceneManager.LoadScene("SelectStage");
+            SceneManager.LoadScene("Stage");
         }
     }
 }

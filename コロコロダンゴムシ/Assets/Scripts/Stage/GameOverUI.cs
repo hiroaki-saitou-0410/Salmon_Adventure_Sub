@@ -71,7 +71,7 @@ namespace RunGame.Stage
                     // 「TITLE」選択中
                     else if (selectedIndex == 1)
                     {
-                        SceneManager.LoadScene("Title");
+                        SceneManager.LoadScene("SelectStage");
                         break;
                     }
                 }

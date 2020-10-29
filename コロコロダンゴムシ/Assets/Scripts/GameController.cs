@@ -75,9 +75,9 @@ namespace RunGame
         /// </summary>
         [SerializeField]
         private string[] stageNames = {
-            "チュートリアル",
-            "旅立ち",
-            "激闘",
+            "ルール説明",
+            "ルール説明",
+            "ルール説明",
         };
 
         /// <summary>
