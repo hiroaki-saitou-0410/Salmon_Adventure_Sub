@@ -58,14 +58,19 @@
     <Compile Include="Assets\Scripts\Stage\CanGenerator.cs" />
     <Compile Include="Assets\Scripts\Stage\RockGenerator.cs" />
     <Compile Include="Assets\Scripts\Stage\BulletFish.cs" />
+    <Compile Include="Assets\Scripts\Stage\SubmarineVolcano1.cs" />
     <Compile Include="Assets\Scripts\Result\SceneController.cs" />
     <Compile Include="Assets\Scripts\Stage\BackgroundController.cs" />
     <Compile Include="Assets\Scripts\Stage\ChaseCamera.cs" />
+    <Compile Include="Assets\Scripts\Stage\SubmarineVolcano5.cs" />
     <Compile Include="Assets\Scripts\Stage\AnimatedTile.cs" />
     <Compile Include="Assets\Scripts\Stage\test.cs" />
     <Compile Include="Assets\Scripts\Stage\Food.cs" />
+    <Compile Include="Assets\Scripts\Stage\SubmarineVolcano3.cs" />
     <Compile Include="Assets\Scripts\SelectStage\SceneController.cs" />
     <Compile Include="Assets\Scripts\Stage\BFF.cs" />
+    <Compile Include="Assets\Scripts\Stage\SubmarineVolcano4.cs" />
+    <Compile Include="Assets\Scripts\Stage\VolcanoFactory.cs" />
     <Compile Include="Assets\Scripts\Stage\Enemy.cs" />
     <Compile Include="Assets\Scripts\GameClear\SceneController.cs" />
     <Compile Include="Assets\Scripts\Stage\SingletonMonoBehaviour.cs" />
@@ -76,18 +81,14 @@
     <Compile Include="Assets\Scripts\Stage\Bgm.cs" />
     <Compile Include="Assets\Scripts\Stage\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Stage\Can.cs" />
+    <Compile Include="Assets\Scripts\Stage\SubmarineVolcano2.cs" />
     <Compile Include="Assets\Scripts\Stage\EnemyFactory.cs" />
     <Compile Include="Assets\Scripts\Stage\GameOverUI.cs" />
     <Compile Include="Assets\Scripts\Stage\StageController.cs" />
     <Compile Include="Assets\Scripts\Stage\HPfactory.cs" />
     <Compile Include="Assets\Scripts\Title\SceneController.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
-    <Compile Include="Assets\Scripts\Stage\SubmarineVolcano2.cs" />
-    <Compile Include="Assets\Scripts\Stage\SubmarineVolcano1.cs" />
-    <Compile Include="Assets\Scripts\Stage\SubmarineVolcano3.cs" />
-    <Compile Include="Assets\Scripts\Stage\SubmarineVolcano4.cs" />
-    <Compile Include="Assets\Scripts\Stage\SubmarineVolcano5.cs" />
-    <Compile Include="Assets\Scripts\Stage\VolcanoFactory.cs" />
+    <Compile Include="Assets\Scripts\Stage\RuleScene.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

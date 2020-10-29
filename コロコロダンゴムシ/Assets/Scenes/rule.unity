@@ -354,7 +354,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 146
+    m_FontSize: 130
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -365,7 +365,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "\u64CD\u4F5C\u8AAC\u660E\n\n\u30FB\u65B9\u5411\u30AD\u30FC\u3000\u3000\u79FB\u52D5\n\u30FB\u5F3E\u306E\u767A\u5C04\u3000\u3000\u30B9\u30DA\u30FC\u30B9\u30AD\u30FC\n"
+  m_Text: "\u64CD\u4F5C\u8AAC\u660E\n\n\u30FB\u65B9\u5411\u30AD\u30FC\u3000\u3000\u79FB\u52D5\n\u30FB\u5F3E\u306E\u767A\u5C04\u3000\u3000\u30B9\u30DA\u30FC\u30B9\u30AD\u30FC\n\u3000\u3000\u3000\u3000\u3000\u3000\u3000Esc\u30AD\u30FC\u3067\u623B\u308B"
 --- !u!222 &445817309
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -560,6 +560,24 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 7707037785775723206}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &751872026 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1310127157688456018, guid: bda2c6f0cc7935b4c8048003a8082436,
+    type: 3}
+  m_PrefabInstance: {fileID: 1310127158023223129}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &751872027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751872026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcc18562e9dd2814eb11161706fa9a21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &951400278 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7707037786168747408, guid: 968f947653cbb1049aeaca03882815a8,
@@ -807,6 +825,11 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1310127157688456020, guid: bda2c6f0cc7935b4c8048003a8082436,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1310127157688456021, guid: bda2c6f0cc7935b4c8048003a8082436,
         type: 3}

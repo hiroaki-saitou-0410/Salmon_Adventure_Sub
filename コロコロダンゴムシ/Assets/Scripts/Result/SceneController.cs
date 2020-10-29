@@ -86,17 +86,21 @@ namespace RunGame.Result
         // Update is called once per frame
         void Update() {
             // 「Enter」キーが押された場合
-            if (Input.GetKeyUp(KeyCode.Return)) {
-                // 次のステージ番号
+            if (Input.GetKeyUp(KeyCode.Return))
+            {    // 次のステージ番号
                 var nextStageNo = StageNo + 1;
                 // 次のステージが存在する場合
-                if (nextStageNo < stageCount) {
+                if (nextStageNo < stageCount)
+                {
                     // 『ステージ画面』へシーン遷移
                     Stage.SceneController.StageNo = nextStageNo;
-                    SceneManager.LoadScene("Stage");
+                    SceneManager.LoadScene("Title");
+
+                    // 最終ステージをクリアーした場合
+
                 }
-                // 最終ステージをクリアーした場合
-                else {
+                else
+                {
                     // 『ゲームクリアー画面』へシーン遷移
                     SceneManager.LoadScene("GameClear");
                 }

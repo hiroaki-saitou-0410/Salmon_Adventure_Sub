@@ -145,7 +145,7 @@ namespace RunGame.Stage
             {
                 //PlayTime += Time.deltaTime;
                 
-#if UNITY_EDITOR
+//#if UNITY_EDITOR
                 // 「Enter」キーが押された場合『リザルト画面』へ
                 if (Input.GetKeyUp(KeyCode.Return))
                 {
@@ -158,7 +158,7 @@ namespace RunGame.Stage
                     GameOver();
                     break;
                 }
-#endif
+//#endif
                 yield return null;
             }
         }
@@ -226,9 +226,14 @@ namespace RunGame.Stage
         {
             if (Input.GetKeyUp(KeyCode.Return))
             {
-                SceneManager.LoadScene("Selectstage");
+                SceneManager.LoadScene("Result");
                 return;
             }
+            //if (Input.GetKeyUp(KeyCode.Escape))
+            //{
+            //    SceneManager.LoadScene("SelectStage");
+            //    return;
+            //}
         }
     }
 }
