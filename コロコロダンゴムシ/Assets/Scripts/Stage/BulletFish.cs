@@ -26,7 +26,8 @@ namespace RunGame.Stage
         // Start is called before the first frame update
         void Start()
         {
-
+            BFF script = BFF.GetComponent<BFF>();
+            counter = script.BulletCount;
         }
 
         // Update is called once per frame

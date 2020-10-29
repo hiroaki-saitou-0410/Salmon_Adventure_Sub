@@ -14,10 +14,14 @@ public class Enemy : MonoBehaviour
     private float pos_x;
     private float pos_y;
     private float ene_speed = 0.01f;
+    GameObject scenecontroller;
+    SceneController script;
 
     // Start is called before the first frame update
     void Start()
     {
+        scenecontroller = GameObject.Find("scenecontroller");
+        script = scenecontroller.GetComponent<SceneController>();
         rotate = Random.Range(1, 3);
         anim = GetComponent<Animator>();
     }
@@ -46,6 +50,7 @@ public class Enemy : MonoBehaviour
         if (collision.tag == "Bullet")
         {
             anim.SetTrigger("Hit");
+            script.score += 20;
             Trigger = true;
             Invoke("DelayMethod", timer);
         }

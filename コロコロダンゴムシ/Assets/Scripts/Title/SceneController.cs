@@ -31,10 +31,6 @@ namespace RunGame.Title
         /// 「StartButton」をクリックした際に
         /// 呼び出されます。
         /// </summary>
-        public void OnClickStartButton()
-        {
-            // 『ステージ選択画面』へシーン遷移
-            SceneManager.LoadScene("Stage");
-        }
+        
     }
 }

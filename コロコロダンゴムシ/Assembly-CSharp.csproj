@@ -81,6 +81,7 @@
     <Compile Include="Assets\Scripts\Stage\StageController.cs" />
     <Compile Include="Assets\Scripts\Title\SceneController.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\Stage\HPfactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
