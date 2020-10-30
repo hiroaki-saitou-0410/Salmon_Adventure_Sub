@@ -5,17 +5,18 @@ using UnityEngine;
 public class CanGenerator : MonoBehaviour
 {
     GameObject cangenerator;
-
-    Enemy script;
+    //public GameObject gomi;
+    //Enemy E_script = gomi.GetComponent<Enemy>();
+    float enemyTimer;
 
     public GameObject CanPrefab = null;
 
     // Start is called before the first frame update
     void Start()
     {
-        cangenerator = GameObject.Find("ゴミ袋");
 
-        script = cangenerator.GetComponent<Enemy>();
+        enemyTimer = Enemy.timer;
+        //script = cangenerator.GetComponent<Enemy>();
     }
 
     // Update is called once per frame
@@ -25,7 +26,7 @@ public class CanGenerator : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        float timer = script.timer;
+        float timer = enemyTimer;
         if (collision.tag == "Bullet")
         {
             Invoke("DelayMethod", timer);
@@ -33,6 +34,7 @@ public class CanGenerator : MonoBehaviour
     }
     void DelayMethod()
     {
+
         Vector2 can_pos = transform.position;
         for (int i = 0; i < 3; i++)
         {

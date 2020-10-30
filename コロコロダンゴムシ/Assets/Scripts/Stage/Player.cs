@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Security.Cryptography;
 using UnityEngine;
+using RunGame.Stage;
 
 namespace RunGame.Stage
 {
@@ -22,13 +23,15 @@ namespace RunGame.Stage
         private float slow_speed = 0.01f;
         private float speed_lim = 0.2f;
         private float accelerate = 0.005f;
-        GameObject scenecontroller;
+        //GameObject scenecontroller;
         SceneController script;
         private bool timer_on = false;
         private bool buf = false;
+        public GameObject Bullet_Right;
 
         public int Contact_Enemy;
         public bool Contact_P = false;
+        public bool Contact_ = false;
 
 
         public Vector2 Player_pos
@@ -71,14 +74,13 @@ namespace RunGame.Stage
         // Update is called once per frame
         void Update()
         {
-             Vector2 player_pos = transform.position;
+            Vector2 player_pos = transform.position;
             Player_pos = player_pos;
 
-            //テストコード(Ontriggerに変更)
-            if (Input.GetKeyDown(KeyCode.C))
+            bool is_pushed_Space = Input.GetKeyDown(KeyCode.Space);
+            if (is_pushed_Space == true)
             {
-                Contact_Enemy++;
-                Contact_P = true;
+                Instantiate(Bullet_Right, Player_pos, Quaternion.identity);
             }
         }
 
@@ -237,6 +239,15 @@ namespace RunGame.Stage
             // アイテムを取得
             else if (collider.tag == "Item")
             {
+                Contact_ = true;
+                timer_on = true;
+                buf = true;
+            }
+            //Enemyと接触時判定
+            else if (collider.tag == "Enemy")
+            {
+                Contact_Enemy++;
+                Contact_P = true;
                 
             }
         }

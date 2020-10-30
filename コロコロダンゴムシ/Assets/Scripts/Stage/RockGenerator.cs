@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class RockGenerator : MonoBehaviour
 {
-    GameObject rockgenerator;
+    GameObject rockgenerator = null;
+    //Enemy script = null;
+    float enemyTimer;
 
-    Enemy script;
+    //Enemy script;
 
     public GameObject RockPrefab = null;
 
     // Start is called before the first frame update
     void Start()
     {
-        rockgenerator = GameObject.Find("岩");
-
-        script = rockgenerator.GetComponent<Enemy>();
+        //        rockgenerator = GameObject.Find("岩(Clone)");
+        //script = rockgenerator.GetComponent<Enemy>();
+        enemyTimer = Enemy.timer;
     }
 
     // Update is called once per frame
@@ -25,9 +27,11 @@ public class RockGenerator : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        float timer = script.timer;
+        
+
         if (collision.tag == "Bullet")
         {
+            float timer = enemyTimer;
             Invoke("DelayMethod", timer);
         }
     }

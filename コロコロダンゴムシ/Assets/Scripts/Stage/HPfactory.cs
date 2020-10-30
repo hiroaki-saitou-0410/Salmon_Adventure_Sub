@@ -57,7 +57,6 @@ public class HPfactory : MonoBehaviour
                 }
                 for (int i = HP_MAX-1; i >= 0 + Contact_Enemy; i--)
                 {
-                    Debug.Log("ZA");
                     Hp[i].SetActive(true);
                     No_DamageCount = 0;
                     Contact_P = false;

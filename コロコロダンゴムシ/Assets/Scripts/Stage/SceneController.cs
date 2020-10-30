@@ -5,11 +5,13 @@ using UnityEngine.UI;
 
 namespace RunGame.Stage
 {
+    
     /// <summary>
     /// 『ステージ画面』のシーン遷移を制御します。
     /// </summary>
     public class SceneController : MonoBehaviour
     {
+        private float time = 0.0f;
         public int score;
         #region インスタンスへのstaticなアクセスポイント
         /// <summary>
@@ -224,6 +226,12 @@ namespace RunGame.Stage
         }
         void Update()
         {
+            time += Time.deltaTime;
+            if(time >= 1.0f)
+            {
+                score += 20;
+                time = 0.0f;
+            }
             if (Input.GetKeyUp(KeyCode.Return))
             {
                 SceneManager.LoadScene("Result");

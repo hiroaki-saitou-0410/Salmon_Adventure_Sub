@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\Stage\SubmarineVolcano1.cs" />
     <Compile Include="Assets\Scripts\Result\SceneController.cs" />
     <Compile Include="Assets\Scripts\Stage\BackgroundController.cs" />
+    <Compile Include="Assets\Scripts\Stage\RuleScene.cs" />
     <Compile Include="Assets\Scripts\Stage\ChaseCamera.cs" />
     <Compile Include="Assets\Scripts\Stage\SubmarineVolcano5.cs" />
     <Compile Include="Assets\Scripts\Stage\AnimatedTile.cs" />
@@ -88,7 +89,7 @@
     <Compile Include="Assets\Scripts\Stage\HPfactory.cs" />
     <Compile Include="Assets\Scripts\Title\SceneController.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
-    <Compile Include="Assets\Scripts\Stage\RuleScene.cs" />
+    <Compile Include="Assets\Scripts\Stage\BulletMove.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

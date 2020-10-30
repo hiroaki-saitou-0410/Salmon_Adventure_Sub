@@ -6,8 +6,8 @@ public class Can : MonoBehaviour
 {
     GameObject cangenerator;
 
-    Enemy script;
-
+    //Enemy script;
+    float enemyTimer;
     public GameObject FoodPrefab = null;
     private int Food;
     private int Prob = 1;
@@ -15,9 +15,10 @@ public class Can : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cangenerator = GameObject.Find("ゴミ袋");
+        //cangenerator = GameObject.Find("ゴミ袋");
 
-        script = cangenerator.GetComponent<Enemy>();
+        //script = cangenerator.GetComponent<Enemy>();
+        enemyTimer = Enemy.timer;
     }
 
     // Update is called once per frame
@@ -27,7 +28,7 @@ public class Can : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
-        float timer = script.timer;
+        float timer = enemyTimer;
         if (collision.tag == "Bullet")
         {
             Food = Random.Range(1, 15);

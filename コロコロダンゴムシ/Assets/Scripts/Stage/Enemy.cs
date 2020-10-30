@@ -5,24 +5,24 @@ using System.Security.Cryptography;
 using System.Threading;
 using UnityEngine;
 using RunGame.Stage;
+using UnityEngine.Analytics;
 
 public class Enemy : MonoBehaviour
 {
     private Animator anim;
-    private bool Trigger = false;
+    private bool trigger = false;
     private int rotate;
-    public float timer = 0.7f;
+    public static readonly float timer = 0.7f;
     private float pos_x;
     private float pos_y;
     private float ene_speed = 0.01f;
-    GameObject scenecontroller;
     SceneController script;
 
     // Start is called before the first frame update
     void Start()
     {
-        scenecontroller = GameObject.Find("scenecontroller");
-        script = scenecontroller.GetComponent<SceneController>();
+        //scenecontroller = GameObject.Find("scenecontroller");
+        //script = scenecontroller.GetComponent<SceneController>();
         rotate = Random.Range(1, 3);
         anim = GetComponent<Animator>();
     }
@@ -48,13 +48,14 @@ public class Enemy : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.tag == "Bullet")
+        if (collision.tag == "Bullet" || collision.tag == "Player")
         {
             anim.SetTrigger("Hit");
-            script.score += 20;
-            Trigger = true;
+            //script.score += 20;
+            trigger = true;
             Invoke("DelayMethod", timer);
         }
+        
     }
     void DelayMethod()
     {
